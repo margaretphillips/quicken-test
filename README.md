@@ -1,8 +1,8 @@
 # quicken-test
 
-cd front-end\n
-npm i\n
-ng serve\n\n
+cd front-end<br />
+npm i<br />
+ng serve<br /><br />
 
-cd back-end\n
+cd back-end<br />
 npm start
