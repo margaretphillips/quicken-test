@@ -1,0 +1,194 @@
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size:18px; }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    height: 80px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: darkred;
+    font-weight: 600;
+   border-bottom:2px solid #ccc;
+  }
+
+  .toolbar h5 {
+    margin: 0 23px;
+    font-size: 2rem;
+  }
+
+  .toolbar span {
+    margin: 0 23px;
+    font-size: 1.4rem;
+    margin-right: 3%;
+    font-weight: 500;
+  }
+
+  .content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 96vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-user{
+    background:#ccc;
+    border:1px solid #333;
+    padding:24px;
+  }
+
+  .btn{
+    color:#fff;
+    font-size:.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:8px;
+    padding: 9px 19px;
+  }
+  label{
+    font-size: 18px;
+    margin: 0 8px;
+  }
+  input{
+    width:100%;
+    margin: 4px;
+    border:1px solid #333;
+    border-radius: 4px;
+    padding:4px;
+    font-size:18px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    _margin: 16px;
+    width: 100%;
+  }
+
+  .user_icon{
+    margin-right:16px;
+  }
+  .user_detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+.user_detail span{
+  white-space: nowrap;
+  font-size:18px;
+ }
+
+  
+  .user-container {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+  }
+
+  .expense-container{
+   
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     align-items: center;
+    justify-content: space-between;
+    background: #eee;
+  }
+
+.expense-item{
+   min-width: 120px;
+   padding: 8px;
+   text-align:center;
+   font-size: 18px;
+ }
+
+
+  .fund-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .fund-header h5{
+      font-size:1.3rem;
+      font-weight: 500;
+      color:darkred
+   }
+
+    .fund-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .fund-container span{
+    font-size:1.2rem;
+    color: #333;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+
+   .circle-link {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin: 8px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 1s ease-out;
+  }
+
+  .circle-link:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+ 

@@ -1,0 +1,12 @@
+{
+    "fund_total": 162.18,
+    "fund_midpoint": 54.06,
+    "users": [
+        {
+            "user": 700,
+            "expense_total": 53.54,
+            "status": "down",
+            "offset": 0.5200000000000031
+        }
+    ]
+}

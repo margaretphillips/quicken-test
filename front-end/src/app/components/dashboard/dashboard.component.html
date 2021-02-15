@@ -1,0 +1,40 @@
+<div class="content" role="main">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-body">
+                <div class="full">
+                    <button class="btn btn-info" (click)="add_user_show = !add_user_show">Add User</button>
+                    <app-add-user [add_user]='add_user_show'></app-add-user>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-body">
+                <div class="full">
+                    <div class="fund-header">
+                        <h5>Fund Midpoint</h5>
+                        <h5>Fund Value</h5>
+                    </div>
+                    <div class="fund-header">
+                        <span>{{user_fund.fund_midpoint | currency:USD }}</span>
+                        <span>{{user_fund.fund_total | currency:USD}}</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container" *ngIf="users_list && user_fund">
+        <div class="card" *ngFor="let u of users_list">
+            <div class="card-body">
+                <div class="full">
+                    <app-user [user_list]="u" [user_fund]="user_fund"></app-user>
+                    <app-expense [user_list]="u"></app-expense>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

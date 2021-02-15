@@ -1,0 +1,10 @@
+<div class='expense-container'>
+    <div>
+        <span class="expense-item" *ngFor="let e of user_list.expenses">
+            {{e.type | titlecase }} {{ e.amount | currency:USD }}
+        </span>
+    </div>
+    <div>
+        <div class="expense-item">Total Expense {{user_list.expense_total | currency: USD}}</div>
+    </div>
+</div>

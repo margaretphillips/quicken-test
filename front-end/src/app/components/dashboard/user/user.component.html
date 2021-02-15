@@ -1,0 +1,17 @@
+<div class='user-container'>
+    <div class="user_detail">
+        <div class="user_icon"><img class="circle-link" src="./assets/user_icon.jpg" /></div>
+        <span>{{ user_list.user_name }}</span>
+    </div>
+    <div class='fund-container'>
+
+        <span>{{user_stats[0].offset | currency:USD}}</span>
+        <div *ngIf="user_stats[0].status === 'down'" class="user_icon"><img class="circle-link"
+                src="./assets/arrows_down.jpg" /></div>
+        <div *ngIf="user_stats[0].status === 'up'" class="user_icon"><img class="circle-link"
+                src="./assets/arrows_up.jpg" />
+        </div>
+
+
+    </div>
+</div>
