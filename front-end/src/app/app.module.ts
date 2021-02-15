@@ -10,7 +10,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { UserComponent } from './components/dashboard/user/user.component';
 import { DetailComponent } from './components/dashboard/user/detail/detail.component';
 import { ExpenseComponent } from './components/dashboard/user/expense/expense.component';
-import { FundComponent } from './components/dashboard/fund/fund.component';
 import { UserFundService } from './services/user-fund.service';
 import { AddUserComponent } from './components/dashboard/user/forms/add-user/add-user.component'
 
@@ -22,7 +21,6 @@ import { AddUserComponent } from './components/dashboard/user/forms/add-user/add
     UserComponent,
     DetailComponent,
     ExpenseComponent,
-    FundComponent,
     AddUserComponent
   ],
   imports: [
