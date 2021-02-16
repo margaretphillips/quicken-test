@@ -13,15 +13,18 @@
         <div class="card">
             <div class="card-body">
                 <div class="full">
-                    <div class="fund-header">
-                        <h5>Fund Midpoint</h5>
-                        <h5>Fund Value</h5>
-                    </div>
-                    <div class="fund-header">
-                        <span>{{user_fund.fund_midpoint | currency:USD }}</span>
-                        <span>{{user_fund.fund_total | currency:USD}}</span>
-                    </div>
 
+                    <div class="fund-header">
+                        <h5>Fund Value</h5>
+                        <h5>Equal Share</h5>
+                    </div>
+                    <div class="fund-header">
+                        <span>{{user_fund.fund_total | currency:USD}}</span>
+                        <span>{{user_fund.fund_midpoint | currency:USD }}</span>
+                    </div>
+                    <div class="fund-header">
+                        <span>There are currently {{users_list.length}} contributors.</span>
+                    </div>
                 </div>
             </div>
         </div>

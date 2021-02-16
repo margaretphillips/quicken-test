@@ -36,14 +36,14 @@ class Handler {
         let fund = fs.readFileSync(file);
         fund = JSON.parse(fund)
 
-        let expense_total = 0
+        let expense_total = 0.00
         users.forEach((i) => {
             i.expenses.forEach((c) => {
                 expense_total += parseFloat(c.amount)
             })
         })
 
-        let fund_midpoint = expense_total / users.length
+        let fund_midpoint = parseFloat(expense_total) / parseInt(users.length)
         fund_midpoint = parseFloat(fund_midpoint)
 
         let fund_users = []
