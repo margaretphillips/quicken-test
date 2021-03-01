@@ -1,0 +1,21 @@
+[
+    {
+        "user": 700,
+        "user_name": "Adriana",
+        "expense_total": 53.54,
+        "expenses": [
+            {
+                "type": "travel",
+                "amount": 5.75
+            },
+            {
+                "type": "food",
+                "amount": 35
+            },
+            {
+                "type": "hotel",
+                "amount": 12.79
+            }
+        ]
+    }
+]
